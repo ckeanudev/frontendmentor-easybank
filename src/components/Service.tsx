@@ -17,13 +17,13 @@ const Service = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mg:gap-14 mt-14 md:mt-20">
           {services.map((service) => {
             return (
-              <article className="group hover:translate-y-[-20px] transition duration-300	">
+              <article className="group lg:hover:translate-y-[-20px] transition duration-300	">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-18 md:w-24 mb-6 md:mb-12 mx-auto lg:mx-0"
+                  className="w-18 md:w-24 mb-6 md:mb-12 mx-auto lg:mx-0 floating_icon"
                 />
-                <h3 className="text-center lg:text-left text-xl md:text-3xl text-[#2d314d] group-hover:text-[#31d35c] transition duration-300 mb-3 md:mb-8">
+                <h3 className="text-center lg:text-left text-xl md:text-3xl text-[#2d314d] lg:group-hover:text-[#31d35c] transition duration-300 mb-3 md:mb-8">
                   {service.title}
                 </h3>
                 <p className="text-center lg:text-left text-[#9698a6] text-sm md:text-xl">

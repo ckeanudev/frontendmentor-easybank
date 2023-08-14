@@ -35,3 +35,42 @@
     transform: translate(16%, -0px);
   }
 }
+
+.floating_mobile {
+  transform: translate(-50%, -15px);
+  animation-name: floating_mobile;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating_mobile {
+  0% {
+    transform: translate(-50%, -15px);
+  }
+  50% {
+    transform: translate(-50%, -6%);
+  }
+  100% {
+    transform: translate(-50%, -15px);
+  }
+}
+
+.floating_icon {
+  animation-name: floating_icon;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating_icon {
+  0% {
+    transform: translate(0%, 0px);
+  }
+  50% {
+    transform: translate(0%, -6%);
+  }
+  100% {
+    transform: translate(0%, -0px);
+  }
+}
