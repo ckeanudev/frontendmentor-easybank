@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Public Sans", sans-serif;
+}
+
+.example {
+  color: #2d314d;
+  color: #31d35c;
+  color: #2bb7da;
+
+  color: #9698a6;
+  color: #f3f4f6;
+  color: #fafafa;
+  color: #ffffff;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* margin-left: 30px;
+  margin-top: 5px; */
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(16%, 0px);
+  }
+  50% {
+    transform: translate(16%, -2%);
+  }
+  100% {
+    transform: translate(16%, -0px);
+  }
+}

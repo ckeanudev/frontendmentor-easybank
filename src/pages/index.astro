@@ -1,15 +1,59 @@
 ---
+import PageLayout from "../layouts/PageLayout.astro";
+import Service from "../components/Service";
+import Latest from "../components/Latest";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PageLayout title="Easybank">
+  <main class="relative overflow-hidden">
+    <section class="bg-[#fafafa] overflow-hidden relative">
+      <div class="relative flex lg:hidden">
+        <img src="/images/bg-intro-mobile.svg" class="w-full flex" alt="" />
+
+        <img
+          src="./images/image-mockups.png"
+          alt=""
+          class="absolute flex top-0 translate-y-[-15%] left-[50%] w-full translate-x-[-50%]"
+        />
+      </div>
+
+      <div
+        class="lg:min-h-[98vh] flex justify-center items-center lg:items-start flex-col max-w-[1500px] mx-auto py-0 lg:py-8 px-6 lg:px-8">
+        <h1
+          class="text-center lg:text-left text-[#2d314d] text-4xl md:text-6xl xl:text-7xl mb-5 lg:mb-10 mt-0 lg:mt-12 xl:mt-7">
+          Next generation <br /> digital banking
+        </h1>
+
+        <p
+          class="text-[#9698a6] text-center lg:text-left text-sm sm:text-base lg:text-lg xl:text-2xl mb-8 sm:mb-10 lg:mb-14">
+          Take your financial life online. Your Easybank account <br
+            class="hidden lg:flex"
+          /> will be a one-stop-shop for spending, saving, <br
+            class="hidden lg:flex"
+          /> budgeting, investing, and much more.
+        </p>
+
+        <button
+          class="bg-gradient-to-r from-[#31d35c] to-[#2bb7da] py-3 sm:py-4 px-8 sm:px-10 text-white font-semibold text-sm sm:text-base xl:text-xl rounded-full mb-14 lg:mb-0 hover:brightness-110"
+          >Request Invite</button
+        >
+      </div>
+
+      <img
+        src="/images/bg-intro-desktop.svg"
+        class="hidden lg:flex absolute object-contain top-[50%] translate-y-[-53%] translate-x-[42%] right-0 w-[98%]"
+        alt=""
+      />
+    </section>
+
+    <img
+      src="./images/image-mockups.png"
+      alt=""
+      class="hidden lg:flex absolute top-0 translate-y-[-5%] right-0 w-[50%] translate-x-[16%] floating"
+    />
+
+    <Service />
+
+    <Latest />
+  </main>
+</PageLayout>
